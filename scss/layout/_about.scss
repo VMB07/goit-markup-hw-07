@@ -1,0 +1,14 @@
+.about {
+
+ &__item {
+  position: relative;
+  --items: 3;}
+
+ &__text {
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--icon-bg-cl);}
+}

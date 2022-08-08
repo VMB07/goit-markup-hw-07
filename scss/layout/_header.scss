@@ -1,0 +1,22 @@
+.header {
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    margin-right: 93px;
+    border-bottom: 1px solid var(--border-cl);
+
+ &__conteiner {
+    display: flex;
+    align-items: center;}
+
+ &__logo {
+    font-family: var(--secondary-fond);
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    color: var(--accent-tx-cl);}
+  
+  &__logo--black {
+    color: #000000;}
+}

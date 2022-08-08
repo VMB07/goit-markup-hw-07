@@ -1,0 +1,131 @@
+.register-form {
+    &__group{
+        margin-bottom: 20px;
+      }
+      
+      &__wrap {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin-bottom: 10px;
+      }
+      
+      &__wrap:last-child {
+        margin-bottom: 0;
+      }
+      
+      &__input,
+      &__message {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding: 11px;
+        padding-left: 42px;
+        outline: transparent;
+        transition: border-color var(--transition);
+      }
+      
+      &__label {
+        text-align: left;
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+        color: var(--grey-text-cl);
+      }
+      
+      
+      &__icon {
+        position: absolute;
+        bottom: 11px;
+        left: 12px;
+        transition: fill var(--transition);
+      }
+      
+      &__wrap:hover &__icon,
+      &__wrap:focus &__icon  {
+        fill: var(--accent-tx-cl);
+        border-color: #2196f3;
+      }
+      
+      &__wrap:hover &__message,
+      &__wrap:focus &__message {
+        fill: var(--accent-tx-cl);
+        border-color: #2196f3;
+      }
+      
+      &__message {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: calc(14 / 12);
+        letter-spacing: 0.01em;
+        height: 120px;
+        padding: 12px 16px;
+        resize: none;
+        
+      }
+      
+      &__wrap:hover &__input,
+      &__wrap:focus &__input  {
+        border-color: var(--accent-tx-cl);
+      }
+      
+      &__input:hover,
+      &__input:focus {
+        border-color: var(--accent-tx-cl);
+      }
+      
+      &__input:hover + &__icon,
+      &__input:focus + &__icon {
+        fill: var(--accent-tx-cl);
+      }
+      
+      &__message:hover,
+      &__message:focus {
+        border-color: var(--accent-tx-cl);
+      }
+      
+      &__message::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+      }
+      
+      &__agreement {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+        gap: 7px;
+        cursor: pointer;
+      }
+      
+      &__checkbox:checked + &__icon--check &__uncheck {
+        opacity: 0;
+        transition: opacity var(--transition);
+      }
+      
+      &__checkbox:checked + &__icon--check &__check {
+        opacity: 1;
+      }
+      
+      &__checkbox:hover + &__icon--check &__uncheck,
+      &__checkbox:focus + &__icon--check &__uncheck {
+        fill: var(--accent-tx-cl);
+      }
+      
+      &__check{
+        opacity: 0;
+        transition: opacity var(--transition);
+      }
+      
+      &__agreement--text {
+        user-select: none;
+        text-underline-position: under;
+      }
+      
+      &__agreement--link {
+        color: var(--accent-tx-cl);
+      }
+}
