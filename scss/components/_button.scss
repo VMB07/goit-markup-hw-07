@@ -1,0 +1,109 @@
+.btn-close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: var(--icon-bg-cl);
+    transition: var(--transition);
+  }
+  
+  .btn-close:hover,
+  .btn-close:focus {
+    fill: var(--accent-tx-cl);
+    border: 1px solid var(--accent-tx-cl);
+  }
+
+  .register-form-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    text-align: center;
+    max-width: 200px;
+    align-items: center;
+    padding: 10px 55px 10px 56px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    background-color: var(--accent-tx-cl);
+    color: var(--icon-bg-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color var(--transition);
+  }
+  
+  .register-form-btn:hover,
+  .register-form-btn:focus {
+    background-color: var(--transition-bg-cl);
+  }
+  
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    color: var(--white-text-cl);
+    background-color: var(--accent-tx-cl);
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding: 10px 32px;
+    min-width: 200px;
+    margin: 0 auto;
+    transition: background-color var(--transition);
+  }
+  
+  .btn:hover,
+  .btn:focus {
+    background-color: var(--transition-bg-cl);
+  }
+
+  .btn__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    margin-right: 10px;
+  }
+  
+  .btn__icon {
+    fill: var(--icon-bg-cl);
+  }
+
+  .filter-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    letter-spacing: 0.03em;
+    color: var(--black-text-cl);
+    background-color: var(--team-bg-cl);
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+    border: none;
+    transition: color var(--transition), background-color var(--transition), box-shadow var(--transition);
+  }
+  
+  .filter-btn:hover,
+  .filter-btn:focus,
+  .accent-btn {
+    color: var(--white-text-cl);
+    background-color: var(--accent-tx-cl);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
